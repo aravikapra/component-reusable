@@ -1,8 +1,9 @@
 import React from 'react'
 import CustomNavbar from '../components/Navbar';
 import CustomForm from '../components/CustomForm';
+import './customizations.css';
 
-export default function FormPenjualan() {
+export default function FormPenjualan( { customClassNames }) {
     const customLinks = [
         { url: "#custom-home", text: "Home" },
         { url: "#custom-about", text: "About" },
@@ -34,8 +35,8 @@ export default function FormPenjualan() {
   return (
     <>
           <CustomNavbar brandText="Penjualan" links={customLinks} />
-          <div className="App">
-          <CustomForm formFields={formFields} onSubmit={handleSubmit} customClassNames={['additional-class']} />
+          <div>
+          <CustomForm formFields={formFields} onSubmit={handleSubmit} customClassNames={customClassNames} />
           </div>
     </>
   )

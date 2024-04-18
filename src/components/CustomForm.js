@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
-import './Style.css'; // Import file CSS utama
-import '../Layouts/customizations.css'; // Import file CSS kustomisasi
+import './Style.css'; // Import file CSS utama // Import file CSS kustomisasi
 
 function CustomForm({ formFields, onSubmit, customClassNames = [] }) {
   const [formData, setFormData] = useState(() => {
@@ -42,7 +41,7 @@ function CustomForm({ formFields, onSubmit, customClassNames = [] }) {
           />
         </Form.Group>
       ))}
-      <Button variant="primary" type="submit" className={`custom-button ${additionalClassNames}`}>
+      <Button type="submit" className={`custom-button ${additionalClassNames}`}>
         Submit
       </Button>
     </Form>

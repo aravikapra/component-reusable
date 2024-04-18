@@ -3,7 +3,7 @@ import { Button } from 'react-bootstrap';
 
 function CustomButtons({ buttons }) {
   return (
-    <div className="d-grid gap-2 mb-3">
+    <div>
       {buttons.map((button, index) => (
         <Button
           key={index}

@@ -1,14 +1,14 @@
 /* Customizations.css */
+@import url('../components/Style.css');
 
 .additional-class {
   color: #ff5722;
-  padding: 50px; /* Mengubah warna teks */
 }
 
 .additional-class .custom-input {
-  border-color: #ff5722; /* Mengubah warna border input */
+  border-color: #ff5722; 
 }
 
 .additional-class .custom-button {
-  background-color: #ff5722; /* Mengubah warna latar belakang tombol */
+  background-color: #ff5722;
 }
