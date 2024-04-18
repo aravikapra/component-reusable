@@ -1,0 +1,123 @@
+.custom-jumbotron {
+    padding: 3rem 0;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .custom-jumbotron h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .custom-jumbotron p {
+    font-size: 1.25rem;
+    color: #555;
+  }
+  
+  .custom-jumbotron hr {
+    border-top: 2px solid #ccc;
+    width: 50%;
+    margin: 1rem auto;
+  }
+
+/* Navbar.css */
+/* NavbarSide.css */
+.navbar {
+  position: sticky;
+  top: 0;
+}
+
+/* CustomForm.css */
+
+.custom-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.custom-form .form-group {
+  margin-bottom: 20px;
+  padding: 50px;
+}
+
+.custom-form .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.custom-form .form-control {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.custom-form .form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.custom-form .custom-button {
+  display: inline-block;
+  margin: 30px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #007bff;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.custom-form .custom-button:hover {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #0056b3;
+}
+
+
+@media (max-width: 768px) {
+  .navbar-expand-sm .navbar-nav .nav-link {
+    padding: .5rem 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .flex-sm-column {
+    flex-direction: row !important;
+  }
+}
+
+/* Dashboard.css */
+.container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 1170px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1400px;
+  }
+}
+
+  
