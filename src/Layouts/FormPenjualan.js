@@ -35,17 +35,8 @@ export default function FormPenjualan() {
     <>
           <CustomNavbar brandText="Penjualan" links={customLinks} />
           <div className="App">
-          <CustomForm
-            formFields={formFields}
-            onSubmit={handleSubmit}
-            formGroupClassName="custom-form-group"
-            renderButton={(handleSubmit) => (
-              <button className="custom-button" type="button" onClick={handleSubmit}>
-                Custom Submit
-              </button>
-            )}
-          />
-        </div>
+          <CustomForm formFields={formFields} onSubmit={handleSubmit} customClassNames={['additional-class']} />
+          </div>
     </>
   )
 }

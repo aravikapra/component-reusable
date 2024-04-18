@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
+import './Style.css'; // Import file CSS utama
+import '../Layouts/customizations.css'; // Import file CSS kustomisasi
 
-function CustomForm({ formFields, onSubmit, customClassName = '' }) {
+function CustomForm({ formFields, onSubmit, customClassNames = [] }) {
   const [formData, setFormData] = useState(() => {
     const initialData = {};
     formFields.forEach((field) => {
@@ -23,8 +25,11 @@ function CustomForm({ formFields, onSubmit, customClassName = '' }) {
     onSubmit(formData);
   };
 
+  // Generate string of additional class names separated by space
+  const additionalClassNames = customClassNames.join(' ');
+
   return (
-    <Form className={`${customClassName}`} onSubmit={handleSubmit}>
+    <Form className={`custom-form ${additionalClassNames}`} onSubmit={handleSubmit}>
       {formFields.map((field) => (
         <Form.Group key={field.id} controlId={field.id}>
           <Form.Label>{field.label}</Form.Label>
@@ -33,11 +38,11 @@ function CustomForm({ formFields, onSubmit, customClassName = '' }) {
             placeholder={field.placeholder}
             value={formData[field.id]}
             onChange={(e) => handleInputChange(e, field.id)}
-            className={customClassName}
+            className={`custom-input ${additionalClassNames}`}
           />
         </Form.Group>
       ))}
-      <Button variant="primary" type="submit" className={`${customClassName}`}>
+      <Button variant="primary" type="submit" className={`custom-button ${additionalClassNames}`}>
         Submit
       </Button>
     </Form>
