@@ -3,7 +3,7 @@ import CustomNavbar from '../components/Navbar';
 import CustomForm from '../components/CustomForm';
 import './customizations.css';
 
-export default function FormPenjualan( { customClassNames }) {
+export default function FormPenjualan({ customClass }) {
     const customLinks = [
         { url: "#custom-home", text: "Home" },
         { url: "#custom-about", text: "About" },
@@ -36,7 +36,7 @@ export default function FormPenjualan( { customClassNames }) {
     <>
           <CustomNavbar brandText="Penjualan" links={customLinks} />
           <div>
-          <CustomForm formFields={formFields} onSubmit={handleSubmit} customClassNames={customClassNames} />
+          <CustomForm formFields={formFields} onSubmit={handleSubmit} customClassNames={customClass} />
           </div>
     </>
   )
